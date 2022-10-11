@@ -13,11 +13,13 @@ const Home = () => {
         <div className=''>
             <div>
                 <img className='w-full h-96' src={img} alt="" />
-                {
-                    quizes.map(quiz=> <Allquiz
-                    key={quiz.id}
-                    quiz={quiz}></Allquiz>)
-                }
+                <div className='grid md:grid-cols-2 sm:grid-cols-1'>
+                    {
+                        quizes.map(quiz => <Allquiz
+                            key={quiz.id}
+                            quiz={quiz}></Allquiz>)
+                    }
+                </div>
 
             </div>
         </div>
