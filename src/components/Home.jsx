@@ -8,7 +8,7 @@ const Home = () => {
     const quizes = useContext(QuizContext)
     // const {name} = quizes.data;
     // console.log(name);
-    console.log(quizes);
+    // console.log(quizes);
     return (
         <div className=''>
             <div>
