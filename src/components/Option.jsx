@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-const Option = ({option}) => {
+const Option = ({ option, id }) => {
+
+
     return (
         <div className='flex mb-3'>
-            <input type="radio" id={option} className="radio radio-secondary mr-3" checked />
+            <input type="radio" name={id} className="radio radio-secondary mr-3" checked />
             <p><small>{option}</small></p>
         </div>
     );

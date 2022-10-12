@@ -1,12 +1,18 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import QuizDetails from './QuizDetails';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Quiz = () => {
     const allQuiz = useLoaderData();
     const quiz = allQuiz.data;
     const { questions } = quiz;
-    console.log(questions);
+
+    const showRightAns = () => {
+        console.log('toast');
+        const notify = () => toast("Wow so easy!");
+
+    }
 
     return (
         <div>
@@ -15,7 +21,8 @@ const Quiz = () => {
                 {
                     questions.map(quizDetails => <QuizDetails
                         key={quizDetails.id}
-                        quizDetails={quizDetails}></QuizDetails>)
+                        quizDetails={quizDetails}
+                        showRightAns={showRightAns}></QuizDetails>)
                 }
             </div>
         </div>

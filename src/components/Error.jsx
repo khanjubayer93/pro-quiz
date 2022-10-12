@@ -2,9 +2,11 @@ import React from 'react';
 
 const Error = () => {
     return (
-        <div>
-            <p>404</p>
-            <h1>This Page Is Not Found</h1>
+        <div className='flex justify-center items-center'>
+            <div>
+                <p className='font-extrabold text-5xl text-red-700'>404</p>
+                <p>This Page Is Not Found</p>
+            </div>
         </div>
     );
 };
