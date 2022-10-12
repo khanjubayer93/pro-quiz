@@ -13,7 +13,8 @@ const QuizDetails = ({ quizDetails }) => {
             <div>
                 {
                     options.map(option=> <Option
-                    option={option}></Option>)
+                    option={option}
+                    ></Option>)
                 }
             </div>
         </div>
